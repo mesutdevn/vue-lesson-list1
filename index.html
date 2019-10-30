@@ -1,0 +1,28 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>Hello Word!</title>
+        <link rel="stylesheet" type="text/css" href="app.css" />
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+
+        <p v-if="isLoading">Yükleniyor..</p>
+        <h2 class="saved-header">Kordinatın 500 metre çevresindeki 10 adet yemek mekanları</h2>
+        <div class="item" v-for="item in venues">
+           <vue-venue :item=item></vue-venue>
+        </div>
+        
+    </div>
+
+    
+
+    
+    
+    <script src="app.js"></script>
+</body>
+
+
+
+</html>
